@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:background="#008080"
+    android:id="@+id/menu"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/closeMenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/menu1">
+    </ImageView>
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ТЕСТОВЫЙ ТЕКСТ"></TextView>
+
+</RelativeLayout>

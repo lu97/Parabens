@@ -1,9 +1,12 @@
 package com.example.parabens;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -22,11 +25,17 @@ public class MainActivity extends AppCompatActivity {
         ListView elems = findViewById(R.id.elements);
         elems.setAdapter(listAdapter);
 
-        ImageView menu = findViewById(R.id.leftMenu);
-        menu.setOnClickListener(new ImageView.OnClickListener() {
+
+
+        RelativeLayout left_drawer = findViewById(R.id.left_drawer);
+        ImageView menuIco = findViewById(R.id.leftMenu);
+
+
+        left_drawer.setVisibility(View.INVISIBLE);
+        menuIco.setOnClickListener(new ImageView.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                setContentView(R.layout.variants_list);
             }
         });
     }
