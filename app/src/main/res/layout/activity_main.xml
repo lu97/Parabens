@@ -16,13 +16,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp">
 
         <ImageView
             android:id="@+id/leftMenu"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
             android:layout_weight="1"
             android:gravity="left"
             android:src="@drawable/menu1" />
@@ -64,7 +66,7 @@
                 android:inputType="textPersonName"
                 android:paddingLeft="10dp"
                 android:text="Введите текст для поиска"
-                android:textSize="24dp"
+                android:textSize="22dp"
                 app:fontFamily="@font/bad_script"
                 />
             <ImageButton
@@ -86,7 +88,7 @@
         <ListView
             android:id="@+id/elements"
             android:layout_width="370dp"
-            android:layout_height="440dp"
+            android:layout_height="340dp"
             android:layout_centerInParent="true"
             />
     </RelativeLayout>
@@ -110,32 +112,32 @@
         android:gravity="center"
         android:layout_marginTop="20dp">
         <ImageButton
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:background="@drawable/place1"
             android:layout_marginRight="30dp"
             ></ImageButton>
         <ImageButton
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
             android:background="@drawable/question1"
             android:layout_marginRight="30dp"
             ></ImageButton>
         <ImageButton
-            android:layout_width="51dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:background="@drawable/logo4"
             android:layout_marginRight="30dp"
             ></ImageButton>
         <ImageButton
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:background="@drawable/favourite_true1"
             android:layout_marginRight="30dp"
             ></ImageButton>
         <ImageButton
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:background="@drawable/place1"
             android:layout_marginRight="30dp"
             ></ImageButton>
