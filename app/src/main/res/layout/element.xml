@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="55."
+            android:layout_centerVertical="true"
+            app:fontFamily="@font/bad_script">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/index"
+            android:text="Длинное название, чтоб его (и текст в скобочках)"
+            android:textSize="16sp"
+            app:fontFamily="@font/bad_script"
+            android:textColor="#2F4F4F"></TextView>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/index"
+            android:layout_toRightOf="@+id/name"
+            android:textSize="16sp"
+            android:text="55.55.5555"
+            android:layout_centerVertical="true"
+            app:fontFamily="@font/bad_script"></TextView>
+
+        <ImageView
+            android:id="@+id/isFavourite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/favourite_true1"
+            android:layout_toRightOf="@id/date"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp">
+
+        </ImageView>
+    </RelativeLayout>
+</LinearLayout>

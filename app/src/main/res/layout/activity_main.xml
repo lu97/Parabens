@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="406dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/leftMenu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:src="@drawable/menu1" />
+
+        <TextView
+            android:id="@+id/name"
+            android:text="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            app:fontFamily="@font/bad_script"
+            android:textColor="#000000"/>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/name"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo4" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/searchPanel"
+            android:layout_width="410dp"
+            android:layout_height="69dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="117dp"
+            android:layout_below="@id/topPanel">
+
+
+            <EditText
+                android:id="@+id/searchInput"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:text="Введите текст для поиска"
+                android:textSize="24dp"
+                app:fontFamily="@font/bad_script"
+                />
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignBottom="@id/searchInput"
+                android:layout_marginLeft="-55dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/searchInput"
+                android:background="@drawable/search1" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/listPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchPanel">
+
+        <ListView
+            android:id="@+id/elements"
+            android:layout_width="370dp"
+            android:layout_height="440dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/code"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Просканировать штрихкод"
+        android:background="#008080"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/listPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        ></Button>
+    <LinearLayout
+        android:id="@+id/buttonsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:layout_marginLeft="30dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/place1"
+            android:layout_marginRight="30dp"
+            ></ImageButton>
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/question1"
+            android:layout_marginRight="30dp"
+            ></ImageButton>
+        <ImageButton
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logo4"
+            android:layout_marginRight="30dp"
+            ></ImageButton>
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/favourite_true1"
+            android:layout_marginRight="30dp"
+            ></ImageButton>
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/place1"
+            android:layout_marginRight="30dp"
+            ></ImageButton>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
