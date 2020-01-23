@@ -1,6 +1,8 @@
 package com.example.parabens;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
         listAdapter = new ListAdapter(this, elements);
         ListView elems = findViewById(R.id.elements);
         elems.setAdapter(listAdapter);
-    }
 
+        ImageView menu = findViewById(R.id.leftMenu);
+        menu.setOnClickListener(new ImageView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
 }
